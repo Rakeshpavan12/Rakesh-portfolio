@@ -1,0 +1,126 @@
+.projects {
+    padding: 100px 8%;
+    color:white
+}
+.projects-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.projects-heading h2 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+.projects-heading p{
+    color:#d8d5d5;
+    font-size: 1.5rem;
+}
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:30px;
+}
+.project-card {
+    background: rgba(192, 42, 42, 0.05);
+    border: 1px solid rgba(168,85,247,0.03);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    backdrop-filter: blur(10px);
+    position: relative;
+
+}
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow:0 0 25px #1f0360,
+    0 0 30px #1f045d,
+    0 0 20px #09034b5c;
+}
+.project-card img {
+    width:100%;
+    height: 300px;
+    object-fit:cover;
+    transition: 0.5s;
+}
+.project-card:hover img {
+    transform: scale(1.05);
+}
+.project-card::before {
+    content: "";
+    position: absolute;
+    inset:0;
+    background: linear-gradient(135deg,rgba(168,25,247,0.2),transparent);
+    opacity: 0;
+    transition: 0.4s;
+    pointer-events: none;
+}
+.project-card::before:hover {
+    opacity: 1;
+}
+.project-content {
+    padding: 25px;
+    position: relative;
+    z-index: 2;
+}
+.project-content h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+.project-content p {
+    color:rgb(223, 207, 207);
+    line-height: 1.6;
+}
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+    margin-top: 15px;
+}
+.tech-stack span {
+    padding: 8px 15px;
+    border-radius: 13px;
+    background: #6d47ae;
+    font-size: 14px;
+}
+.project-buttons {
+    margin-top: 15px;
+    display: flex;
+    gap:15px;
+}
+.project-buttons button {
+    padding: 10px 25px;
+    border:none;
+    border-radius: 15px;
+    background: #925ab5;
+    color:rgb(220, 213, 213);
+    cursor:pointer;
+    transition: 0.3s;
+}
+.project-card:hover::before {
+    background: #260f3b;
+}
+.project-btn {
+    display: flex;
+    align-items: center;
+    gap:8px;
+    width: fit-content;
+    padding: 10px 20px;
+    color:white;
+    background: #5816f4;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+    position: relative;
+    z-index:2;
+}
+.project-btn:hover {
+    background: #a855f7;
+}
+@media(max-width:768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    .projects-heading h2 {
+        font-size: 2rem;
+    }
+}

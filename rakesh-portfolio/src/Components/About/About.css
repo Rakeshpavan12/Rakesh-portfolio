@@ -1,0 +1,137 @@
+.about{
+    width:90%;
+    margin:80px auto;
+    margin-top: 0;
+    padding-top: 40px;
+
+}
+
+.about-header{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.about-header h2{
+    color:white;
+    font-size:48px;
+}
+
+.about-header p{
+    color:#9ca3af;
+    margin-top:10px;
+}
+
+.about-content{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:start;
+}
+
+.about-text h3{
+    color:#9b5cff;
+    font-size:32px;
+    margin-bottom:20px;
+}
+
+.about-text p{
+    color:#d1d5db;
+    line-height:1.9;
+    margin-bottom:20px;
+    font-size:18px;
+}
+.stats-section {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background: rgba(255,255,255,0.03);
+    border:1px solid rgba(155,92,255,.2);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    overflow: hidden;
+    width: 100%;
+
+}
+.stat-item {
+   flex:1;
+   text-align: center;
+   padding: 30px 20px;
+   transition: 0.3s;
+}
+
+.stat-item:hover {
+    transform: translateY(-9px) scale(1.05);
+    border-color: #8b5cff;
+    box-shadow: 0 0 20px rgba(90, 51, 153, 0.3);
+    background: rgba(169, 74, 74, 0.08);
+    border-color: #9b5cff;
+}
+.stat-item::before {
+    content:"";
+    position: absolute;
+    top:0;
+    left:-100;
+    width: 100%;
+    background: linear-gradient(90deg,transparent,rgba(255,255,255,.15));
+    transition: .8s;
+}
+.stat-item div {
+    text-align: left;
+}
+.stat-item:hover::before {
+    left:100%;
+}
+.stat-item h3 {
+    color:#fff;
+    font-size:35px;
+    margin: 10px 0;
+ 
+}
+.stat-item p {
+    color:#3e6db4;
+    font-size:15px;
+}
+.stat-icon {
+    font-size: 38px;
+    color:#c4bfcc;
+    flex-shrink: 0;
+}
+.divider {
+    width:1px;
+    height: 90px;
+    background: rgba(255,255,255,0.03);
+}
+.focus-section {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:20px;
+}
+.focus-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(155,92,255,.2);
+    border-radius: 15px;
+    padding: 22px;
+    backdrop-filter: blur(15px);
+    transition: 0.3s ease;
+}
+.focus-card:hover {
+    transform: translateY(-8px);
+    border-color: #9b5cff;
+    box-shadow: 0 0 25px rgba(155,92,255,.2);
+}
+.focus-icon {
+    font-size: 36px;
+    color:white;
+    margin-bottom: 18px;
+}
+.focus-card h3 {
+    color:#fff;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.focus-card p {
+    color:#bfc7d5;
+    font-size: 15px;
+    line-height: 1.5;
+}
