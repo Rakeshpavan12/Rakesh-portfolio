@@ -280,3 +280,219 @@
         transition: 0.4s;
 
 }
+
+/* =========================
+   MOBILE RESPONSIVE HERO
+========================= */
+
+@media (max-width: 576px) {
+
+    .hero {
+        width: 92%;
+        margin: 25px auto 0;
+        min-height: auto;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: flex-start;
+
+        overflow: hidden;
+        padding-bottom: 40px;
+    }
+
+
+    /* LEFT CONTENT */
+
+    .hero-left {
+        width: 100%;
+        flex: none;
+        z-index: 10;
+    }
+
+
+    .badge {
+        padding: 8px 16px;
+        font-size: 15px;
+        margin-top: 50px;
+    }
+
+
+    .hero-title {
+        font-size: 52px;
+        line-height: 1.05;
+        margin-top: 25px;
+        width: 100%;
+        word-break: normal;
+    }
+
+
+    .hero-title span {
+        display: block;
+    }
+
+
+    .hero-subtitle {
+        width: 100%;
+        max-width: 100%;
+
+        margin-top: 22px;
+
+        font-size: 17px;
+        line-height: 1.6;
+
+        white-space: normal;
+        overflow-wrap: break-word;
+    }
+
+
+    .hero-description {
+        width: 100%;
+        max-width: 100%;
+
+        margin-top: 20px;
+
+        font-size: 15px;
+        line-height: 1.7;
+
+        white-space: normal;
+        overflow-wrap: break-word;
+    }
+
+
+    /* SOCIAL ICONS */
+
+    .contact-links {
+        margin-top: 25px;
+        gap: 14px;
+    }
+
+    .contact-links a {
+        width: 48px;
+        height: 48px;
+        font-size: 22px;
+    }
+
+
+    /* BUTTONS */
+
+    .hero-buttons {
+        width: 100%;
+
+        margin-top: 30px;
+
+        display: flex;
+        gap: 12px;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        flex: 1;
+        padding: 13px 8px;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+
+    /* =====================
+       RIGHT SIDE / PHOTO
+    ===================== */
+
+    .hero-right {
+        width: 100%;
+        flex: none;
+
+        position: relative;
+
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+        min-height: 480px;
+
+        margin-top: 35px;
+    }
+
+
+    .hero-img {
+        width: 300px;
+        max-width: 90%;
+
+        margin-right: 0;
+
+        position: relative;
+        z-index: 5;
+
+        object-fit: contain;
+    }
+
+
+    /* CODE WINDOW */
+
+    .code-window {
+        width: 260px;
+
+        top: 70px;
+        left: 50%;
+
+        transform: translateX(-50%);
+
+        z-index: 2;
+    }
+
+    .code-window pre {
+        font-size: 11px;
+        padding: 12px;
+        line-height: 1.5;
+    }
+
+
+    /* IMAGE GLOW */
+
+    .image-glow {
+        width: 250px;
+        height: 300px;
+
+        left: 50%;
+        top: 100px;
+
+        transform: translateX(-50%);
+
+        filter: blur(80px);
+    }
+
+
+    /* =====================
+       FLOATING ICONS
+    ===================== */
+
+    .floating-icon {
+        z-index: 1;
+        opacity: 0.5;
+    }
+
+    .html {
+        font-size: 55px;
+        top: 3%;
+        left: 65%;
+    }
+
+    .js {
+        font-size: 50px;
+        top: 12%;
+        left: 60%;
+    }
+
+    .react {
+        font-size: 55px;
+        top: 18%;
+        right: 2%;
+    }
+
+    .css {
+        font-size: 50px;
+        bottom: 25%;
+        left: 5%;
+    }
+}
