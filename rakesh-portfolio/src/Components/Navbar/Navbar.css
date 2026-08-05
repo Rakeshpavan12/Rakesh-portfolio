@@ -56,3 +56,50 @@
     background: #3b82f6;
     box-shadow:0 0  20px #0688df60;
 }
+
+/* Desktop */
+@media(min-width:769px) and (max-width:1024px) {
+    .navbar {
+        width:96%;
+        height:70px;
+        padding: 0 20px;
+    }
+    .logo {
+        font-size:34px;
+        padding-right: 10px;
+    }
+    .nav-links {
+        gap:1rem;
+    }
+    .nav-links a{
+        font-size:0.9rem;
+    }
+    .cv-btn {
+        padding: 10px 12px;
+        font-size:12px;
+    }
+
+}
+
+/* Mobile */
+@media (max-width:576px) {
+    .navbar {
+        width:94%;
+        height:60px;
+        margin:10px auto;
+        padding:0 15px;
+        border-radius: 15px;
+    }
+    .logo {
+        font-size:25px;
+        padding-right: 0;
+
+    }
+    .nav-links {
+        display:none;
+    }
+    .cv-btn {
+        padding: 8px 10px;
+        font-size:11px;
+    }
+}
