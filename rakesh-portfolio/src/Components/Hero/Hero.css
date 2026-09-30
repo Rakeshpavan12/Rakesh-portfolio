@@ -284,215 +284,183 @@
 /* =========================
    MOBILE RESPONSIVE HERO
 ========================= */
+/* =========================
+   MOBILE HERO RESPONSIVE
+========================= */
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
 
     .hero {
         width: 92%;
-        margin: 25px auto 0;
+        margin: 20px auto 0;
         min-height: auto;
-
         display: flex;
         flex-direction: column;
-
         align-items: center;
         justify-content: flex-start;
-
         overflow: hidden;
         padding-bottom: 40px;
     }
 
-
     /* LEFT CONTENT */
-
     .hero-left {
         width: 100%;
         flex: none;
-        z-index: 10;
+        text-align: left;
+        z-index: 30;
     }
-
 
     .badge {
-        padding: 8px 16px;
-        font-size: 15px;
-        margin-top: 50px;
+        padding: 8px 15px;
+        font-size: 13px;
+        margin-top: 20px;
     }
-
 
     .hero-title {
-        font-size: 52px;
-        line-height: 1.05;
-        margin-top: 25px;
+        font-size: 46px;
+        line-height: 1.08;
+        margin-top: 22px;
         width: 100%;
-        word-break: normal;
     }
-
-
-    .hero-title span {
-        display: block;
-    }
-
 
     .hero-subtitle {
-        width: 100%;
+        margin-top: 20px;
         max-width: 100%;
-
-        margin-top: 22px;
-
-        font-size: 17px;
-        line-height: 1.6;
-
-        white-space: normal;
-        overflow-wrap: break-word;
+        font-size: 16px;
+        line-height: 1.5;
     }
-
 
     .hero-description {
-        width: 100%;
+        margin-top: 18px;
         max-width: 100%;
-
-        margin-top: 20px;
-
         font-size: 15px;
         line-height: 1.7;
-
-        white-space: normal;
-        overflow-wrap: break-word;
     }
 
-
-    /* SOCIAL ICONS */
-
     .contact-links {
-        margin-top: 25px;
-        gap: 14px;
+        gap: 10px;
+        margin-top: 22px;
     }
 
     .contact-links a {
-        width: 48px;
-        height: 48px;
-        font-size: 22px;
+        width: 45px;
+        height: 45px;
+        font-size: 21px;
+        border-radius: 12px;
     }
-
-
-    /* BUTTONS */
 
     .hero-buttons {
-        width: 100%;
-
-        margin-top: 30px;
-
+        margin-top: 25px;
         display: flex;
         gap: 12px;
+        flex-wrap: wrap;
     }
 
-    .primary-btn,
-    .secondary-btn {
-        flex: 1;
-        padding: 13px 8px;
+    .primary-btn {
+        padding: 12px 20px;
         font-size: 14px;
-        white-space: nowrap;
+    }
+
+    .secondary-btn {
+        padding: 12px 18px;
+        font-size: 14px;
     }
 
 
-    /* =====================
-       RIGHT SIDE / PHOTO
-    ===================== */
-
+    /* RIGHT IMAGE SECTION */
     .hero-right {
         width: 100%;
         flex: none;
-
-        position: relative;
+        min-height: 430px;
+        margin-top: 30px;
 
         display: flex;
         justify-content: center;
-        align-items: flex-end;
-
-        min-height: 480px;
-
-        margin-top: 35px;
-    }
-
-
-    .hero-img {
-        width: 300px;
-        max-width: 90%;
-
-        margin-right: 0;
+        align-items: center;
 
         position: relative;
-        z-index: 5;
-
-        object-fit: contain;
     }
 
+    .hero-img {
+        width: 310px;
+        max-width: 85%;
+        margin-right: 0;
+        position: relative;
+        z-index: 5;
+    }
+
+    .image-glow {
+        width: 260px;
+        height: 350px;
+    }
 
     /* CODE WINDOW */
-
     .code-window {
-        width: 260px;
-
-        top: 70px;
+        width: 230px;
+        top: 30px;
         left: 50%;
-
         transform: translateX(-50%);
-
         z-index: 2;
     }
 
     .code-window pre {
-        font-size: 11px;
+        font-size: 10px;
         padding: 12px;
         line-height: 1.5;
     }
 
 
-    /* IMAGE GLOW */
-
-    .image-glow {
-        width: 250px;
-        height: 300px;
-
-        left: 50%;
-        top: 100px;
-
-        transform: translateX(-50%);
-
-        filter: blur(80px);
-    }
-
-
-    /* =====================
-       FLOATING ICONS
-    ===================== */
-
+    /* FLOATING ICONS */
     .floating-icon {
-        z-index: 1;
-        opacity: 0.5;
+        font-size: 45px;
     }
 
     .html {
         font-size: 55px;
         top: 3%;
-        left: 65%;
+        left: 25%;
     }
 
     .js {
-        font-size: 50px;
-        top: 12%;
+        font-size: 48px;
+        top: 10%;
         left: 60%;
-    }
-
-    .react {
-        font-size: 55px;
-        top: 18%;
-        right: 2%;
     }
 
     .css {
         font-size: 50px;
-        bottom: 25%;
-        left: 5%;
+        left: 40%;
+        bottom: 2%;
+    }
+
+    .react {
+        font-size: 50px;
+        right: 5%;
+        top: 15%;
+    }
+}
+
+
+/* VERY SMALL PHONES */
+@media (max-width: 400px) {
+
+    .hero-title {
+        font-size: 40px;
+    }
+
+    .hero-subtitle {
+        font-size: 15px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+    }
+
+    .hero-img {
+        width: 285px;
+    }
+
+    .hero-right {
+        min-height: 400px;
     }
 }
