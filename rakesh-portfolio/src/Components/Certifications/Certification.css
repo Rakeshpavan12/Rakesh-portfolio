@@ -63,12 +63,46 @@
   background: #9333ea;
 }
 
-@media (max-width: 768px) {
-  .cert-grid {
-    grid-template-columns: 1fr;
-  }
+@media (max-width: 900px) {
 
-  .cert-heading h2 {
-    font-size: 2rem;
-  }
+    .certifications {
+        padding: 40px 5%;
+        min-height: auto;
+    }
+
+    .cert-heading {
+        margin-bottom: 30px;
+    }
+
+    .cert-heading h2 {
+        font-size: 2rem;
+    }
+
+    .cert-heading p {
+        font-size: 15px;
+    }
+
+    .cert-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .cert-card {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 25px 20px;
+    }
+
+    .cert-card h3 {
+        font-size: 1.4rem;
+    }
+
+    .cert-card p {
+        font-size: 15px;
+    }
+
+    .view-cert-btn {
+        padding: 11px 22px;
+        font-size: 14px;
+    }
 }

@@ -19,7 +19,7 @@ function Certification() {
   return (
     <section className="certifications" id="certification">
       <div className="cert-heading">
-        <h2>Certifications</h2>
+        <h2>CERTIFICATIONS</h2>
         <p>Professional Certificates & Training</p>
       </div>
 
