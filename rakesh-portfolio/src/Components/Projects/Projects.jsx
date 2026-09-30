@@ -16,7 +16,7 @@ function Projects() {
     },
     {
     id:2,
-    title:"Otp Verification System",
+    title:"OTP Verification System",
     description:"OTP verification system with secure authentication using React, Node.js, Express, and REST APIs.",
     tech:["React.js","JavaScript","Node.js"],
     github:"https://github.com/Rakeshpavan12/otp-auth-system",
@@ -34,8 +34,8 @@ function Projects() {
   return (
     <section className="projects" id="projects">
       <div className="projects-heading">
-        <h2>Featured Projects</h2>
-        <p>Some of my recent work</p>
+        <h2>PROJECTS</h2>
+        <p>Some of My Recent Works</p>
       </div>
       <div className="projects-grid">
   {projects.map((project) => (
@@ -68,7 +68,7 @@ function Projects() {
         </div>
 
         <div className="project-buttons">
-          <a href={project.github} target="_blank" rel="noopener noreferrer" className='project-btn'><FaLink size={22}/></a>
+          <a href={project.github} target="_blank" rel="noopener noreferrer" className='project-btn'><FaLink size={22}/>View GitHub</a>
         </div>
       </div>
     </motion.div>
