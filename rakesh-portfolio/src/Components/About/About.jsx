@@ -17,15 +17,15 @@ function About() {
           <h3>Building Modern User Interface</h3>
 
           <p>
-           I am a B.Tech graduatee Specializing in Data Science, I am Skiiied in creating responsive, modern, and user-friendly web applications.
+           I am a B.Tech Graduatee Specializing in Data Science, I am Skiiied in Creating Responsive, Modern, and User-Friendly Web Applications.
            
           </p>
           <p>
-            Focused on building responsive, user-friendly and visually appealing web applications using HTML, CSS, JavaScript and React. Skilled in transforming UI designs into clean, interactive interfaces while ensuring responsive layouts, reusable components and seamless user experiences.
+            Focused on Building Responsive, User-friendly and Visually Appealing Web Applications Using HTML, CSS, JavaScript and React. Skilled in Transforming UI Designs Into Clean, Interactive Interfaces While Ensuring Responsive Layouts, Reusable Components and Seamless User Experiences.
           </p>
 
           <p>
-            Familiar with React, REST APIs, Git, MySQL and MongoDB, with hands-on experience through real-world projects and continuous learning.
+            Familiar With React, REST APIs, GIT, MYSQL and MongoDB, With Hands-On Experience Through Real-World Projects and Continuous Learning.
           </p>
 
         </section>
@@ -34,25 +34,24 @@ function About() {
   <article className="focus-card">
     <FaCode className="focus-icon" />
     <h3>Clean Code</h3>
-    <p>Writing reusable, maintainable and scalable React applications.</p>
-  </article>
+    <p>Writing Reusable, Maintainable and Scalable React Applications.</p>  </article>
 
   <article className="focus-card">
     <FaLaptopCode className="focus-icon" />
     <h3>Responsive Design</h3>
-    <p>Creating layouts that work perfectly on every device.</p>
+    <p>Creating Layouts that Work Perfectly On Every Device.</p>
   </article>
 
   <article className="focus-card">
     <FaRocket className="focus-icon" />
     <h3>User Experience</h3>
-    <p>Building fast, interactive and user-friendly interfaces.</p>
+    <p>Building Fast, Interactive and User-Friendly Interfaces.</p>
   </article>
 
   <article className="focus-card">
     <FaGraduationCap className="focus-icon" />
     <h3>Continuous Learning</h3>
-    <p>Always learning modern technologies and improving every day.</p>
+    <p>Always Learning Modern Technologies and Improving Every Day.</p>
   </article>
 
 </section>

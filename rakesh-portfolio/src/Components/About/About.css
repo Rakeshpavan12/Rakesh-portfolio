@@ -30,15 +30,16 @@
 
 .about-text h3{
     color:#9b5cff;
-    font-size:32px;
+    font-size:35px;
     margin-bottom:20px;
+    font-weight: 600;
 }
 
 .about-text p{
     color:#d1d5db;
     line-height:1.9;
     margin-bottom:20px;
-    font-size:18px;
+    font-size:20px;
 }
 .stats-section {
     margin-top: 50px;
@@ -185,7 +186,7 @@
     }
 
     .about-text p {
-        font-size: 15px;
+        font-size: 18px;
         line-height: 1.8;
         margin-bottom: 18px;
 

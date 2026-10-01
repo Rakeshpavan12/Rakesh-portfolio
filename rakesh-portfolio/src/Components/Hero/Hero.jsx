@@ -1,7 +1,7 @@
 import "./Hero.css";
 import{FaHtml5,FaCss3Alt,FaReact,FaGithub,FaEnvelope,FaLinkedin} from "react-icons/fa";
 import {SiJavascript} from "react-icons/si"
-import profile from "../../assets/rakesh.png"
+import profile from "../../assets/image.png"
 import { useState,useEffect } from "react";
 function Hero() {
     const text="Yarrannagari";

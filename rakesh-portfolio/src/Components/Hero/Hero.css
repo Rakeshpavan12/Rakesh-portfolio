@@ -9,8 +9,6 @@
     overflow: hidden;
     
 }
-
-
 .floating-icon {
     position: absolute;
     font-size: 70px;
@@ -128,8 +126,8 @@
     margin-top: 30px;
 }
 .contact-links a {
-    width:52px;
-    height: 50px;
+    width:75px;
+    height: 75px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -137,8 +135,8 @@
     border-radius: 15px;
     background: rgba(118, 83, 174, 0.5); 
     backdrop-filter: blur(25px);
-    color:#bea7e4;
-    font-size: 25px;
+    color:#eeedf0;
+    font-size: 35px;
     transition: 0.3s;
     text-decoration: none;
 
@@ -188,6 +186,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    min-height: 680px;
 }
 .code-window {
     position:absolute;
@@ -247,26 +246,17 @@
 
 }
 .hero-img {
-    width:470px;
+    width:auto;
+    height:720px;
+    max-width: 100%;
     position:relative;
     z-index:5;
     filter: drop-shadow(0 0 15px rgba(66, 20, 122, 0.5));   
     background: transparent;   
     object-fit: contain;
     margin-right: 40px;
-    animation:floatImage 5s ease-in-out infinite;
                                                             
-}
-@keyframes floatImage {
-    0% {
-        transform:translateY(0);
-    }
-    50% {
-        transform:translateY(-12px);
-    }
-    100% {
-        transform:translateY(0);
-    }
+
 }
 .hero-right:hover .image-glow {
     opacity: 0.45;
@@ -382,11 +372,10 @@
     }
 
     .hero-img {
-        width: 310px;
+        width: auto;
+        height: 430px;
         max-width: 85%;
         margin-right: 0;
-        position: relative;
-        z-index: 5;
     }
 
     .image-glow {
@@ -457,7 +446,9 @@
     }
 
     .hero-img {
-        width: 285px;
+        width: auto;
+        height:400px;
+        max-width: 85%;
     }
 
     .hero-right {
