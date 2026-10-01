@@ -38,7 +38,7 @@ function Certification() {
               download
               className="view-cert-btn"
             >
-              Download Certificate
+              View Certificate
             </a>
           </div>
         ))}

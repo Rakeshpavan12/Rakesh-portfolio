@@ -1,30 +1,119 @@
-import './Skills.css';
-import { FaHtml5,FaCss3,FaJs,FaReact,FaJava,FaGitAlt,FaGithub, FaNodeJs} from 'react-icons/fa';
-import { SiMysql,SiMongodb, SiExpress} from 'react-icons/si';
+import "./Skills.css";
+
+import {
+  FaJava,
+  FaPython,
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaReact,
+  FaNodeJs,
+  FaGitAlt,
+  FaGithub,
+  FaCode,
+} from "react-icons/fa";
+
+import {
+  SiExpress,
+  SiMysql,
+  SiMongodb,
+  SiPostman,
+} from "react-icons/si";
+
 function Skills() {
-      return (
-        <section className='Skills'id="skills">
-            <header className="skills-header">
-                <h2>Skills</h2>
-                <p>Technologies and tools I work With</p>
-            </header>
-            <main className='skills-section'>
-                <article className='skill-card'><FaHtml5 className='skill-icon'/><h2>HTML5</h2> </article>
-                <article className='skill-card'><FaCss3 className='skill-icon' /><h2>Css3</h2></article>
-                 <article className='skill-card'><FaJs className='skill-icon' /><h2>JavaScript</h2></article>
-                  <article className='skill-card'><FaReact className='skill-icon' /><h2>React.js</h2></article>
-                  <article className='skill-card'><FaNodeJs className='skill-icon' /><h2>Node.js</h2></article>
-                  <article className='skill-card'><SiExpress className='skill-icon' /><h2>Express.js</h2></article>
-                   <article className='skill-card'><FaJava className='skill-icon' /><h2>Java</h2></article>
-                    <article className='skill-card'><FaGitAlt className='skill-icon' /><h2>Git</h2></article>
-                     <article className='skill-card'><FaGithub className='skill-icon' /><h2>GitHub</h2></article>
-                      <article className='skill-card'><SiMysql className='skill-icon' /><h2>MySQL</h2></article>
-                       <article className='skill-card'><SiMongodb className='skill-icon' /><h2>MongoDB</h2></article>
 
-            </main>
-        </section>
+  const skillCategories = [
+    {
+      title: "Programming",
+      skills: [
+        { name: "Java", icon: <FaJava /> },
+        { name: "Python", icon: <FaPython /> },
+      ],
+    },
 
-      )
-    }
-    
-    export default Skills
+    {
+      title: "Frontend Development",
+      skills: [
+        { name: "HTML5", icon: <FaHtml5 /> },
+        { name: "CSS3", icon: <FaCss3Alt /> },
+        { name: "JavaScript", icon: <FaJs /> },
+        { name: "React.js", icon: <FaReact /> },
+      ],
+    },
+
+    {
+      title: "Backend Development",
+      skills: [
+        { name: "Node.js", icon: <FaNodeJs /> },
+        { name: "Express.js", icon: <SiExpress /> },
+        { name: "REST APIs", icon: <FaCode /> },
+        { name: "CRUD Operations", icon: <FaCode /> },
+        { name: "MVC Architecture", icon: <FaCode /> },
+        { name: "Routing", icon: <FaCode /> },
+      ],
+    },
+
+    {
+      title: "Database",
+      skills: [
+        { name: "MySQL", icon: <SiMysql /> },
+        { name: "MongoDB", icon: <SiMongodb /> },
+      ],
+    },
+
+    {
+      title: "Tools & Technologies",
+      skills: [
+        { name: "Git", icon: <FaGitAlt /> },
+        { name: "GitHub", icon: <FaGithub /> },
+        { name: "Thunder Client", icon: <SiPostman /> },
+        { name: "VS Code", icon: <FaCode /> },
+      ],
+    },
+  ];
+
+  return (
+    <section className="skills" id="skills">
+
+      <div className="skills-heading">
+        <h2>SKILLS</h2>
+        <p>Technologies & Tools I Work With</p>
+      </div>
+
+      <div className="skills-container">
+
+        {skillCategories.map((category, index) => (
+
+          <div className="skill-category" key={index}>
+
+            <h3>{category.title}</h3>
+
+            <div className="skill-items">
+
+              {category.skills.map((skill, skillIndex) => (
+
+                <div className="skill-item" key={skillIndex}>
+
+                  <div className="skill-icon">
+                    {skill.icon}
+                  </div>
+
+                  <span>{skill.name}</span>
+
+                </div>
+
+              ))}
+
+            </div>
+
+          </div>
+
+        ))}
+
+      </div>
+
+    </section>
+  );
+}
+
+export default Skills;

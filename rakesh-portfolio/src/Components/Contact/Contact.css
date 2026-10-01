@@ -1,107 +1,321 @@
-.contact{
-    padding-top:60px;
-    color:white;
+.contact {
+  width: 100%;
+  max-width: none;
+  margin: 0 auto;
+  padding: 90px 30px 80px;
+  box-sizing: border-box;
+  color: white;
+
+    /* Background Image */
+  background-image:
+    linear-gradient(
+      rgba(5, 3, 12, 0.45),
+      rgba(5, 3, 12, 0.45)
+    ),
+    url("../../assets/Futuristic\ Purple\ Techscape.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+  overflow: hidden;
 }
 
-.contact-heading{
-    text-align:center;
-    margin-bottom:50px;
+
+/* =========================
+   HEADING
+========================= */
+
+.contact-heading {
+  text-align: center;
+  margin-bottom: 55px;
 }
 
-.contact-heading h2{
-    font-size:3rem;
-    margin-bottom:10px;
+.contact-heading h2 {
+  font-size: 3rem;
+  margin: 0 0 12px;
+  font-weight: 750;
 }
 
-.contact-heading p{
-    color:#d1d5db;
+.contact-heading p {
+  margin: 0;
+  color: #cfcfcf;
+  font-size: 1rem;
 }
 
-.contact-container{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:25px;
-    margin-top: 50px;
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 70px;
+  align-items: center;
 }
 
-.contact-card{
-    background:rgba(255,255,255,0.05);
-    border:1px solid rgba(168,85,247,0.2);
-    border-radius:20px;
-    padding:35px;
-    text-align:center;
-    transition:0.4s;
+
+/* =========================
+   LEFT SIDE
+========================= */
+
+.contact-intro {
+  padding: 20px 0;
 }
 
-.contact-card:hover{
-    transform:translateY(-10px);
-    box-shadow:
-    0 0 20px rgba(168,85,247,0.4),
-    0 0 40px rgba(168,85,247,0.2);
+.contact-line {
+  display: block;
+  width: 55px;
+  height: 4px;
+  border-radius: 10px;
+
+  background: linear-gradient(
+    90deg,
+    #7c3aed,
+    #a855f7
+  );
+
+  margin-bottom: 30px;
 }
 
-.contact-icon{
-    font-size:2.5rem;
-    margin-bottom:15px;
+.contact-intro h3 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  line-height: 1.3;
 }
 
-.contact-card h3{
-    margin-bottom:15px;
+.contact-intro p {
+  color: #e8e1e1;
+  font-size: 1.2rem;
+  line-height: 1.9;
+  max-width: 420px;
 }
 
-.contact-card a{
-    color:white;
-    text-decoration:none;
-    word-break:break-word;
+
+/* =========================
+   RIGHT SIDE
+========================= */
+
+.contact-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-.contact-card a:hover{
-    color:#a855f7;
+
+/* =========================
+   CONTACT ITEM
+========================= */
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  width: 50%;
+  min-height: 77px;
+
+  padding: 14px 19px;
+  box-sizing: border-box;
+
+  text-decoration: none;
+  color: white;
+
+  background: rgba(255, 255, 255, 0.035);
+
+  border: 1px solid rgba(168, 85, 247, 0.22);
+
+  border-radius: 14px;
+
+  transition: all 0.3s ease;
 }
+
+
+/* ICON */
+
+.contact-item-icon {
+  width: 40px;
+  height: 45px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background: rgba(124, 58, 237, 0.15);
+
+  border: 1px solid rgba(168, 85, 247, 0.3);
+
+  color: #f1eef5;
+
+  font-size: 22px;
+}
+
+
+/* TEXT */
+
+.contact-item-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.contact-item-info span {
+  display: block;
+
+  font-size: 17px;
+  font-weight: 600;
+
+  color: white;
+
+  margin-bottom: 6px;
+}
+
+.contact-item-info p {
+  margin: 0;
+
+  color: #aaa;
+
+  font-size: 15px;
+
+  overflow-wrap: anywhere;
+}
+
+
+/* ARROW */
+
+.contact-arrow {
+  flex-shrink: 0;
+
+  font-size: 22px;
+  color: #f4f4f5;
+
+  transition: 0.3s;
+}
+
+
+/* HOVER */
+
+.contact-item:hover {
+  transform: translateX(6px);
+
+  border-color: rgba(168, 85, 247, 0.6);
+
+  background: rgba(124, 58, 237, 0.08);
+
+  box-shadow:
+    0 0 20px rgba(124, 58, 237, 0.12);
+}
+
+.contact-item:hover .contact-item-icon {
+  background: rgba(124, 58, 237, 0.3);
+  color: white;
+}
+
+.contact-item:hover .contact-arrow {
+  transform: translate(3px, -3px);
+  color: #c4a0ff;
+}
+
+
+/* =========================
+   TABLET
+========================= */
 
 @media (max-width: 900px) {
 
-    .contact {
-        padding-top: 40px;
-    }
+  .contact {
+    padding: 70px 25px;
+  }
 
-    .contact-heading {
-        margin-bottom: 30px;
-        padding: 0 20px;
-    }
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
 
-    .contact-heading h2 {
-        font-size: 2rem;
-    }
+  .contact-intro {
+    text-align: center;
+  }
 
-    .contact-heading p {
-        font-size: 15px;
-    }
+  .contact-line {
+    margin: 0 auto 25px;
+  }
 
-    .contact-container {
-        grid-template-columns: 1fr;
-        gap: 18px;
-        margin-top: 30px;
-        padding: 0 15px;
-    }
+  .contact-intro p {
+    margin: 0 auto;
+  }
+}
 
-    .contact-card {
-        width: 100%;
-        box-sizing: border-box;
-        padding: 28px 20px;
-        border-radius: 18px;
-    }
 
-    .contact-icon {
-        font-size: 2.2rem;
-    }
+/* =========================
+   MOBILE
+========================= */
 
-    .contact-card h3 {
-        font-size: 1.2rem;
-        margin-bottom: 12px;
-    }
+@media (max-width: 600px) {
 
-    .contact-card a {
-        font-size: 14px;
-    }
+  .contact {
+    width: 100%;
+    padding: 60px 20px 50px;
+  }
+
+  .contact-heading {
+    margin-bottom: 40px;
+  }
+
+  .contact-heading h2 {
+    font-size: 2rem;
+  }
+
+  .contact-heading p {
+    font-size: 14px;
+  }
+
+  .contact-content {
+    gap: 35px;
+  }
+
+  .contact-intro {
+    padding: 0;
+  }
+
+  .contact-intro h3 {
+    font-size: 1.45rem;
+  }
+
+  .contact-intro p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .contact-items {
+    gap: 12px;
+  }
+
+  .contact-item {
+    min-height: 68px;
+    padding: 12px 14px;
+    gap: 13px;
+  }
+
+  .contact-item-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .contact-item-info span {
+    font-size: 13px;
+  }
+
+  .contact-item-info p {
+    font-size: 12px;
+  }
+
+  .contact-arrow {
+    font-size: 19px;
+  }
 }

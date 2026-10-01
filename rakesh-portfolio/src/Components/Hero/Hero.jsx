@@ -31,7 +31,7 @@ function Hero() {
             </span>
             <h1 className="hero-title">Rakesh Pavan<br /><span className="animated-name">{displayText}</span></h1>
             <h3 className="hero-subtitle">Frontend Developer | React Developer | UI Builder | Web Developer | Full Stack Developer</h3>
-            <p className="hero-description">Frontend Developer skilled in HTML, CSS, JavaScript and React. Passionate about building responsive, user-friendly web applications with clean code, modern UI and seamlessuser experiences.</p>
+            <p className="hero-description">Frontend Developer Skilled in HTML, CSS, JavaScript and React. Passionate About Building Responsive, User-Friendly Web Applications With Clean Code, Modern UI and Seamlessuser Experiences.</p>
             <section className="contact-links">
                 <a href="https://github.com/Rakeshpavan12" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
                 <a href="https://www.linkedin.com/in/rakesh-pavan-yarrannagari-8579b5272/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -40,7 +40,7 @@ function Hero() {
             </section>
             <div className="hero-buttons">
                 <button className="primary-btn" onClick={()=>document.getElementById("projects").scrollIntoView({behavior:"smooth"})}>Explore Projects</button>
-                <button className="secondary-btn">Download Resume</button>
+                <button className="secondary-btn">Download CV</button>
             </div>
             </div>
             <div className="hero-right">
