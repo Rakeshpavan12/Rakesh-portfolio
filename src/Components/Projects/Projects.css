@@ -1,0 +1,237 @@
+.projects {
+    width: 100%;
+    padding: 75px 6% 90px;
+    box-sizing: border-box;
+    color:white;
+    background: transparent;
+}
+.projects-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.projects-heading h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color:#b879df;
+    margin: 0 0 10px;
+    letter-spacing: -1px;
+    margin-bottom: 15px;
+}
+.projects-heading p{
+    color:#a1a1aa;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+}
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    gap:22px;
+    max-width: 1250px;
+    margin: 0 auto;
+    align-items: stretch;
+}
+.project-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    position: relative;
+    background: rgba(255,255,255,0.025);
+    border: 1px solid #29262f;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: border-color 0.4s ease;
+}
+.project-card:hover {
+    transform:none;
+    box-shadow:none;
+    border-color:rgba(167,139,250,0.45);
+}
+.project-card img {
+    display: block;
+    width:100%;
+    height: 220px;
+    object-fit:cover;
+    transition: none;
+    object-position: center;
+}
+.project-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 22px;
+}
+.project-content h3 {
+    color:#f4f4f5;
+    margin-bottom: 15px;
+    font-size:19px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 0 0 12px;
+}
+.project-content p {
+    color:#a1a1aa;
+    font-size: 14px;
+    line-height: 1.75;
+    margin: 0;
+}
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap:8px;
+    margin-top: 18px;
+}
+.tech-stack span {
+    padding: 6px 10px;
+    border: 1px solid #34303d;
+    border-radius: 6px;
+    background:transparent;
+    font-size: 12px;
+    line-height: 1.4;
+}
+.project-buttons {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+    margin-top: auto;
+    padding-top: 20px;
+}
+
+.project-btn {
+    display: inline-flex;
+    align-items: center;
+    gap:8px;
+    width: fit-content;
+    padding: 9px 12px;
+    border: 1px solid #34303d;
+    color:#e4e4e7;
+    background:transparent;
+    text-decoration: none;
+    border-radius: 7px;
+    font-size: 13px;
+    transition: 0.3s;
+    cursor: pointer;
+    transition: border-color 0.2s ease, color 0.2s ease;
+}
+.project-btn:hover {
+    background:transparent;
+    color:#c4bffd;
+    border-color: #8b5cf6;
+}
+.project-btn svg {
+    font-size: 13px;
+}
+@media (max-width: 1000px) {
+
+    .projects {
+        padding: 65px 5% 75px;
+    }
+
+    .projects-heading {
+        margin-bottom: 40px;
+    }
+
+    .projects-heading h2 {
+        font-size: 2.3rem;
+    }
+
+    .projects-heading p {
+        font-size: 1.2rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    .project-card img {
+        height: 200px;
+    }
+
+    .project-content {
+        padding: 18px;
+    }
+
+    .project-content h3 {
+        font-size: 1.35rem;
+    }
+
+    .project-content p {
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .projects {
+        width: 100%;
+        padding: 50px 6% 65px;
+        box-sizing: border-box;
+    }
+
+    .projects-heading {
+        margin-bottom: 30px;
+    }
+
+    .projects-heading h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .projects-heading p {
+        font-size: 1rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .project-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .project-card img {
+        width: 100%;
+        height: 230px;
+        object-fit: cover;
+    }
+
+    .project-content {
+        padding: 20px;
+    }
+
+    .project-content h3 {
+        font-size: 1.3rem;
+        line-height: 1.3;
+        margin-bottom: 12px;
+    }
+
+    .project-content p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .tech-stack {
+        gap: 8px;
+    }
+
+    .tech-stack span {
+        padding: 7px 12px;
+        font-size: 13px;
+    }
+
+    .project-buttons {
+        margin-top: 15px;
+    }
+
+    .project-btn {
+        padding: 9px 18px;
+        font-size: 14px;
+    }
+}
